@@ -9,6 +9,15 @@
     <UseWindowsForms>true</UseWindowsForms>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+
+    <!-- Application Versioning & Metadata -->
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <Product>Liquid Glass Optical Studio</Product>
+    <Authors>Mohd Rafey</Authors>
+    <Description>Real-time optical liquid glass cursor lens with magnification, refraction, chromatic dispersion, and shake-to-enlarge.</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,5 +29,9 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
+
+  <Target Name="SignPublishedExe" AfterTargets="Publish">
+    <Exec Command="powershell -NoProfile -ExecutionPolicy Bypass -Command &quot;$cert = Get-ChildItem Cert:\LocalMachine\My | Where-Object { $_.Subject -eq 'CN=LiquidGlassLocalCert' } | Select-Object -First 1; if ($cert) { Set-AuthenticodeSignature -FilePath '$(PublishDir)LiquidGlassCursor.exe' -Certificate $cert } else { throw 'Certificate CN=LiquidGlassLocalCert not found in LocalMachine\My' }&quot;" />
+  </Target>
 
 </Project>

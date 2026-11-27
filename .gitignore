@@ -1,14 +1,32 @@
-# Build & IDE folders
+# .NET Build & Publish Outputs
 bin/
 obj/
+publish/
+*.dll
+*.exe
+*.pdb
+
+# Visual Studio & IDE Files
 .vs/
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
+.idea/
 
-# Signing & Packaging artifacts
+# Code Signing & Certificates (Never commit keys or local certs)
 *.pfx
 *.p12
 *.snk
 *.cer
-publish/
+*.crt
+*.key
+
+# Inno Setup Compiled Installer Output
+Packaging/Output/
 Output/
+
+# OS & Temp Files
+Thumbs.db
+.DS_Store
+*.log
