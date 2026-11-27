@@ -1,0 +1,14 @@
+# Build & IDE folders
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Signing & Packaging artifacts
+*.pfx
+*.p12
+*.snk
+*.cer
+publish/
+Output/

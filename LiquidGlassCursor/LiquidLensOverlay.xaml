@@ -1,0 +1,19 @@
+﻿<Window x:Class="LiquidGlassCursor.LiquidLensOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        IsHitTestVisible="False"
+        ResizeMode="NoResize"
+        Width="96" Height="96">
+  <Grid>
+    <Image x:Name="LensImage"
+           Stretch="None"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           RenderOptions.BitmapScalingMode="HighQuality"/>
+  </Grid>
+</Window>
