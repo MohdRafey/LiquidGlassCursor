@@ -1,6 +1,6 @@
 # Liquid Glass Optical Studio
 
-[![Download Latest Release](https://img.shields.io/github/v/release/<YOUR_GITHUB_USERNAME>/LiquidGlassCursor?label=Download%20Installer&style=for-the-badge&color=0284C7)](https://github.com/<YOUR_GITHUB_USERNAME>/LiquidGlassCursor/releases/latest)
+[![Download Latest Release](https://img.shields.io/badge/Download_Installer-v1.0.0-0284C7?style=for-the-badge&logo=windows)](../../releases/latest)
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20(x64)-0F172A?style=for-the-badge&logo=windows)
 ![Framework](https://img.shields.io/badge/.NET-8.0%20WPF-512BD4?style=for-the-badge&logo=dotnet)
 ![License](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)
@@ -27,7 +27,7 @@
 
 ## Installation (Recommended)
 
-1. Go to the [**Releases**](https://github.com/<YOUR_GITHUB_USERNAME>/LiquidGlassCursor/releases/latest) page and download **`LiquidGlassCursor_Setup_v1.0.0.exe`**.
+1. Go to the [**Releases**](../../releases/latest) page and download **`LiquidGlassCursor_Setup_v1.0.0.exe`**.
 2. Run the installer (Administrator privileges are requested once during setup).
 3. The installer automatically:
    - Deploys the signed application into `C:\Program Files\LiquidCursor\`.
@@ -46,5 +46,5 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/](https://github.com/)<YOUR_GITHUB_USERNAME>/LiquidGlassCursor.git
+git clone [https://github.com/YOUR_USERNAME/LiquidGlassCursor.git](https://github.com/YOUR_USERNAME/LiquidGlassCursor.git)
 cd LiquidGlassCursor
